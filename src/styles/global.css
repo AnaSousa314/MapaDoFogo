@@ -1,0 +1,24 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  color: #fff;
+  background: #ebf2f5;
+  scroll-behavior: smooth;
+  overflow-x:hidden;
+  background-image: url('../img/fire2.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body{
+  
+}
+
+body,input,button{
+  font: 600 18px Montserrat,sans-serif;
+
+}

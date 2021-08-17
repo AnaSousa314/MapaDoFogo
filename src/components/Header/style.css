@@ -1,0 +1,144 @@
+a {
+  color: #fff;
+}
+
+/* header */
+
+.app-top {
+  display: inline-block;
+
+  background-color: #E23814;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  width: 100%;
+  z-index: 3;
+}
+
+.app-top ul {
+  margin-right: 40px;
+  list-style: none;
+  overflow: hidden;
+}
+
+.app-top li a {
+  display: block;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+
+.app-top li a:hover,
+.app-top .menu-btn:hover {
+  filter: brightness(70%);
+}
+
+.app-top .logo {
+  display: block;
+  float: left;
+  font-size: 1rem;
+  padding: 5px 20px;
+  text-decoration: none;
+}
+
+.app-top .logo img{
+  width: 60px;
+}
+
+/* menu */
+
+.app-top .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.app-top .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 40px;
+  position: relative;
+  user-select: none;
+}
+
+.app-top .menu-icon .navicon {
+  background: #fff;
+  display: block;
+  height: 5px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 30px;
+}
+
+.app-top .menu-icon .navicon:before,
+.app-top .menu-icon .navicon:after {
+  background: #fff;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.app-top .menu-icon .navicon:before {
+  top: 10px;
+}
+
+.app-top .menu-icon .navicon:after {
+  top: -10px;
+}
+
+/* menu btn */
+
+.app-top .menu-btn {
+  display: none;
+}
+
+.app-top .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.app-top .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.app-top .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.app-top .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.app-top .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.app-top .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* Responsive */
+
+@media (min-width: 48rem) {
+  .app-top li {
+    float: left;
+  }
+  .app-top li a {
+    padding: 20px 30px;
+  }
+  .app-top .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .app-top .menu-icon {
+    display: none;
+  }
+}
+
+@media(max-width: 48rem){
+  .app-top .menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

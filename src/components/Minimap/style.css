@@ -1,0 +1,9 @@
+.leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar{
+  border: none;
+}
+
+@media(max-width: 48rem){
+  .info img{
+    width: 60px;
+  }
+}
