@@ -5,12 +5,14 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import '../styles/fire.css'
 
+import image from '../img/fire2.jpg'
+
 
 export default function Fire(){
 
   return(
-    <>
-    <main className="content">
+    <div style={{backgroundImage:`url(${image})`,backgroundPosition:'center',backgroundSize:'cover',backgroundRepeat:'no-repeat'}}>
+    <div className="content">
       <Header/>
       <div className="content-main">
 
@@ -32,10 +34,10 @@ export default function Fire(){
           </section>
         </div>
       </div>
-    </main>
+    </div>
     <FireMap />
     <Footer/>
-    </>
+    </div>
   );
 
 }

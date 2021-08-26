@@ -1,4 +1,3 @@
-import React from 'react';
 import './style.css';
 
 import logo from '../../img/logo.svg';
@@ -18,7 +17,7 @@ export default function Header(){
               <Link to="/" >Home</Link> 
             </li>
             <li>
-              <Link to="" >Sobre</Link>          
+              <Link to="/sobre" >Sobre</Link>          
             </li>
           </ul>
       </header>

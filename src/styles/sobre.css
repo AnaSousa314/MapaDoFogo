@@ -1,0 +1,53 @@
+
+.page-about{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+
+  background-image: url('../img/forest.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  z-index: 2;
+}
+
+.page-about section{
+  text-align: justify;
+  padding: 40px;
+  line-height: 30px;
+}
+
+.page-about section .title{
+  text-align: center;
+  font-size: 56px;
+  padding: 50px;
+}
+
+.page-about section h1{
+  text-align: center;
+  font-size: 40px;
+  padding: 30px 0 20px 0;
+}
+
+.page-about section p{
+  font-size: 25px;
+  font-weight: normal;
+}
+
+@media(max-width: 48rem){
+  .page-about section .title{
+    font-size: 40px;
+  }
+
+  .page-about section h1{
+    font-size: 30px;
+  }
+
+  .page-about section p{
+    font-size: 20px;
+  }
+
+}

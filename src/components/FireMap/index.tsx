@@ -29,15 +29,8 @@ export default function FireMap(){
 
   useEffect(()=>{
     api.get("/").then((response)=>{
-      // console.log(response);
       const {data} = response
-
-      // const {cordenada}= data
-      // console.log(cordenada);
       setBurned(data);
-      // console.log(data);
-
-      
     })
   },[]);
 
@@ -50,14 +43,9 @@ export default function FireMap(){
             <MapContainer 
               center={[-6.0444359, -49.8854597]}
               zoom={12.5}
-              // style={{width:"90%",height:"80%"}}
               className="map-container"
-              // scrollWheelZoom={false}
             >
               <TileLayer url="https://a.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-              {/* <TileLayer 
-            url={`https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/256/{z}/{x}/{y}@2x?access_token=${process.env.REACT_APP_MAPBOX_TOKEN}`}
-          /> */}
 
               {burned.map((burn,index)=>{
                 console.log(burn);
