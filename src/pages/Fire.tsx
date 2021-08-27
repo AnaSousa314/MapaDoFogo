@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import '../styles/fire.css'
 
-import image from '../img/fire2.jpg'
+import image from '../img/fire3.jpg'
 
 
 export default function Fire(){
